@@ -1,0 +1,57 @@
+@media (max-width: 900px) {
+  .banner .userimage-update {
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .username-update {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .col-3 {
+    display: none;
+  }
+  .col-5,
+  .col-4 {
+    width: 100%;
+  }
+  .username-update .edit-buttons {
+    justify-content: center !important;
+  }
+  .username-update h2 {
+    padding-left: 0 !important;
+  }
+  .recommendation {
+    margin-top: 200px !important;
+  }
+}
+@media (min-width: 901px) {
+  .username-update {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 924px) {
+  .intro,
+  .aboutuser {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .aboutuser-shadow h4 {
+    width: 100%;
+  }
+  .aboutuser-shadow:nth-child(2) > div:first-child {
+    flex-direction: column;
+    text-align: center;
+  }
+  .aboutuser-shadow:first-child .live {
+    flex-direction: column;
+    width: 100%;
+  }
+  .like {
+    flex-direction: column;
+    width: 100%;
+  }
+  button {
+    text-align: left;
+  }
+}

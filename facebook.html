@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/54148970dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!--bootstrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!--bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <header id="facebook-header">
+      <div class="header-container container-fluid mx-1">
+        <div class="left-side d-flex gap-2 align-items-center">
+          <img src="images/favicon.png" height="40px" alt="Facebook Logo" />
+          <div class="search-container d-none d-md-block">
+            <form action="">
+              <i class="bi bi-search"></i>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search Facebook"
+              />
+            </form>
+          </div>
+          <button class="altSearch d-block d-md-none">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <div
+          class="middle d-flex justify-content-between align-items-center d-none d-lg-block flex-shrink-0"
+        >
+          <button>
+            <i class="bi bi-house-door"></i>
+          </button>
+          <button>
+            <i class="bi bi-person"></i>
+          </button>
+          <button>
+            <i class="bi bi-people"></i>
+          </button>
+        </div>
+        <div
+          class="right d-flex justify-content-center align-items-center gap-2"
+        >
+          <button class="d-flex flex-shrink-0">Find Friends</button>
+          <div
+            class="nav-buttons d-flex justify-content-center align-items-center gap-2"
+          >
+            <button class="d-none d-lg-block">
+              <i class="bi bi-grid-3x3-gap-fill"></i>
+            </button>
+            <button class="d-none d-lg-block">
+              <i class="bi bi-messenger"></i>
+            </button>
+            <button class="d-none d-md-block">
+              <i class="bi bi-bell-fill"></i>
+            </button>
+          </div>
+          <div class="d-flex userimage">
+            <img src="images/userimg.jpg" alt="Profile picture" />
+            <button
+              class="img-update d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main-page">
+      <section class="container-fluid">
+        <div class="banner container p-0">
+          <img
+            src="images/banner.jpg"
+            alt="Banner"
+            height="100%"
+            width="100%"
+          />
+          <div class="add-banner-photo gap-2">
+            <i class="bi bi-camera-fill"></i>
+            <span class="d-none d-md-block">Add Cover Photo</span>
+          </div>
+          <div class="userimage-update">
+            <img src="images/userimg.jpg" alt="userimage" height="168" />
+            <button class="camera-button">
+              <i class="bi bi-camera-fill"></i>
+            </button>
+          </div>
+          <div class="username-update row mx-2">
+            <div class="col-3"></div>
+            <div class="col-4">
+              <h2 class="fw-bold">Coffee</h2>
+            </div>
+            <div
+              class="col-5 edit-buttons d-flex justify-content-end flex-shrink-0 align-items-center gap-2"
+            >
+              <button class="flex-shrink-0">
+                <i class="bi bi-plus"></i> Add to Story
+              </button>
+              <button class="flex-shrink-0">
+                <i class="bi bi-pencil-fill"></i> Edit Profile
+              </button>
+              <button><i class="fa-solid fa-angle-up"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div
+          class="container recommendation p-3 d-flex align-items-center flex-column"
+        >
+          <i class="bi bi-hand-thumbs-up-fill"></i>
+          <h4 class="fw-bold text-center">
+            Add more friends to get recommendations
+          </h4>
+          <p class="mb-0">
+            When you add some more friends, you'll see a list of people that you
+            may know here.
+          </p>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="container"></div>
+        <hr />
+      </section>
+      <section class="container p-0">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <nav class="nav">
+            <a class="nav-link active" aria-current="page" href="#">Posts</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link d-none d-sm-blocks" href="#">Friends</a>
+            <a class="nav-link d-none d-sm-block" href="#">Photos</a>
+            <a class="nav-link d-none d-md-block" href="#">Videos</a>
+            <a class="nav-link d-none d-md-block" href="#">Check-ins</a>
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Videos</a></li>
+                <li><a class="dropdown-item" href="#">Check-ins</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Sports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Music</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Films</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">TV programmes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Books</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Likes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Events</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Reviews Given</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Groups</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Manage Sections</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <button class="flex-shrink-0 mx-3 dot">
+            <i class="bi bi-three-dots"></i>
+          </button>
+        </div>
+      </section>
+      <section class="container-fluid p-0 about d-flex justify-content-center">
+        <div class="row container py-4 px-0">
+          <div class="col-5 my-2 intro">
+            <div class="bg-white p-3 rounded">
+              <h4 class="fw-bold fs-5 text-black mb-4">Intro</h4>
+              <div class="d-flex flex-column w-100 row-gap-3">
+                <button class="btn btn-secondary py-2 fw-bold">Add Bio</button>
+                <button class="btn btn-secondary py-2 fw-bold">
+                  Edit Details
+                </button>
+                <button class="btn btn-secondary py-2 fw-bold mb-2">
+                  Add Featured
+                </button>
+              </div>
+            </div>
+            <div class="mt-3 bg-white p-3 rounded photo-video">
+              <div class="justify-content-between d-flex">
+                <h4 class="fw-bold fs-5 text-black">Photos</h4>
+                <p class="mb-0 fs-5">See All Photos</p>
+              </div>
+            </div>
+            <div class="mt-3 bg-white p-3 rounded photo-video">
+              <div class="justify-content-between d-flex">
+                <h4 class="fw-bold fs-5 text-black">Videos</h4>
+                <p class="mb-0 fs-5">See All Friends</p>
+              </div>
+            </div>
+            <p class="footer-cc mt-3 d-none d-lg-block">
+              Privacy · Terms · Advertising · Ad choices · Cookies · · Meta ©
+              2025
+            </p>
+          </div>
+          <div class="col-7 my-2 aboutuser d-flex flex-column row-gap-3">
+            <div
+              class="bg-white py-2 px-3 rounded d-flex flex-column aboutuser-shadow"
+            >
+              <div class="d-flex gap-3">
+                <img src="images/userimg.jpg" alt="user image" height="40" />
+                <input
+                  type="text"
+                  readonly
+                  placeholder="What's on your mind?"
+                />
+              </div>
+              <hr class="my-2" />
+              <div
+                class="d-flex justify-content-between align-items-center events gap-3 live"
+              >
+                <button
+                  class="w-100 d-flex align-items-center gap-2 justify-content-center rounded"
+                >
+                  <i class="bi bi-camera-video-fill"></i>
+                  Live Video
+                </button>
+                <button
+                  class="w-100 d-flex align-items-center gap-2 justify-content-center rounded"
+                >
+                  <i class="bi bi-images"></i>
+                  Photo/Video
+                </button>
+                <button
+                  class="w-100 d-flex align-items-center gap-2 justify-content-center rounded"
+                >
+                  <i class="bi bi-flag-fill"></i>
+                  Life Event
+                </button>
+              </div>
+            </div>
+            <div class="bg-white rounded aboutuser-shadow">
+              <div
+                class="d-flex justify-content-between align-items-center px-3 pt-3 pb-2"
+              >
+                <h4 class="fw-bold fs-5 text-black">Posts</h4>
+                <div class="gap-2 d-flex filter">
+                  <button
+                    class="d-flex justify-content-center align-items-center gap-2"
+                  >
+                    <i class="bi bi-sort-up"></i> <span>Filter</span>
+                  </button>
+                  <button
+                    class="d-flex justify-content-center align-items-center gap-2"
+                  >
+                    <i class="bi bi-gear-fill"></i> <span>Manage Posts</span>
+                  </button>
+                </div>
+              </div>
+              <hr class="my-1" />
+              <div
+                class="d-flex justify-content-evenly align-items-center px-3 pt-1 pb-2 view gap-3"
+              >
+                <button
+                  class="d-flex justify-content-center align-items-center gap-2 rounded w-100 p-1"
+                >
+                  <i class="bi bi-list"></i> <span>List View</span>
+                </button>
+                <button
+                  class="d-flex justify-content-center align-items-center gap-2 rounded w-100 p-1"
+                >
+                  <i class="bi bi-grid-fill"></i><span>Grid View</span>
+                </button>
+              </div>
+            </div>
+            <div class="bg-white p-3 rounded birth">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex gap-2 align-items-center">
+                  <img src="images/userimg.jpg" alt="user img" height="40" />
+                  <div class="d-flex flex-column justify-content-center">
+                    <p class="mb-0">Coffee</p>
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="mb-0">10 Oct 2003 </span>
+                      <i class="bi bi-clock-fill"></i>
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="rounded-circle">
+                    <i class="bi bi-three-dots"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex flex-column align-items-center birthday">
+                <button><i class="bi bi-trophy-fill"></i></button>
+                <h4 class="fs-5">Born on 10 October 2003</h4>
+              </div>
+              <hr class="m-0" />
+              <div
+                class="d-flex justify-content-between align-items-center gap-3 m-1 like"
+              >
+                <button class="w-100 rounded bg-white border-0 py-1">
+                  <i class="bi bi-hand-thumbs-up me-2"></i>
+                  <span>Like</span>
+                </button>
+                <button class="w-100 rounded bg-white border-0 py-1">
+                  <i class="bi bi-chat me-2"></i>
+                  <span>Comment</span>
+                </button>
+                <button class="w-100 rounded bg-white border-0 py-1">
+                  <i class="bi bi-send me-2"></i>
+                  <span>Share</span>
+                </button>
+              </div>
+              <hr class="m-0" />
+              <div class="d-flex mt-3 gap-3 align-items-center write-comment">
+                <img src="images/userimg.jpg" alt="user image" height="35px" />
+
+                <input
+                  type="text"
+                  name="text"
+                  id="text"
+                  placeholder="Write a comment..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
