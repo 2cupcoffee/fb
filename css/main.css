@@ -21,6 +21,7 @@
   position: relative;
   height: 350px;
 }
+
 .banner img:first-child {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -117,7 +118,7 @@
   background-color: var(--hovergray);
 }
 .about {
-  background-color: var(--deepgray);
+  background-color: var(--lightgray);
 }
 .intro button {
   background-color: var(--deepgray);
@@ -270,11 +271,11 @@
   }
 }
 /*slider*/
-.col-7 {
+.aboutuser {
   height: 525px;
   overflow-y: auto;
 }
-.col-7::-webkit-scrollbar {
+.aboutuser::-webkit-scrollbar {
   display: none;
 }
 .footer-cc {
@@ -285,4 +286,93 @@
 .dropdown-menu {
   height: 300px;
   overflow-y: auto;
+}
+/*about page*/
+.about-page {
+  background-color: var(--lightgray);
+}
+.about-page-content {
+  box-shadow: var(--goodboxshadow);
+}
+.aboutFirstRow a {
+  text-decoration: none;
+}
+.aboutFirstRow li {
+  padding: 5px 8px;
+  color: var(--textgray);
+  font-weight: 500;
+  border-radius: 6px;
+}
+.aboutFirstRow li:hover {
+  background-color: var(--lightgray);
+}
+.aboutFirstRow li:active {
+  background-color: #ebf5ff;
+  color: var(--blue);
+}
+.aboutFirstRow li:visited {
+  background-color: #ebf5ff;
+  color: var(--blue);
+}
+.aboutSecondscol {
+  a {
+    text-decoration: none;
+  }
+  li {
+    font-weight: 500;
+    list-style-image: url(../images/plus-circle.svg);
+    padding: 0 8px;
+  }
+}
+.aboutSecondscol li:hover {
+  text-decoration: underline;
+}
+.photos-header h4:hover {
+  text-decoration: underline;
+}
+.photos-header div button:first-child {
+  all: unset;
+  color: var(--blue);
+  padding: 6px 8px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+.photos-header div button:first-child:hover {
+  background-color: var(--hovergray);
+}
+.photos-album {
+  all: unset;
+  font-weight: 500;
+  color: var(--blue);
+  height: 100%;
+  border-bottom: 3px solid var(--blue);
+}
+.photo-box button {
+  all: unset;
+  padding: 40px 47px;
+  border-radius: 8px;
+  border: 1px solid var(--hovergray);
+  background-color: var(--deepgray);
+}
+.photo-box button i {
+  font-size: 50px;
+  color: var(--textgray);
+}
+.photo-footer {
+  p {
+    font-weight: 500;
+  }
+}
+.photo-footer:hover {
+  text-decoration: underline;
+}
+.sports-body .second-button {
+  all: unset;
+  font-weight: 500;
+  color: var(--textgray);
+}
+.music-body {
+  h4 {
+    color: var(--textgray);
+  }
 }
