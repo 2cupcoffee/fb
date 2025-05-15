@@ -55,3 +55,55 @@
     text-align: left;
   }
 }
+/* Setting the username */
+@media (min-width: 1400px) {
+  .username-update .blank-space {
+    flex: 0 0 auto;
+    width: 17%;
+  }
+  .nameOfUser {
+    flex: 0 0 auto;
+    width: 41.33%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .username-update .blank-space {
+    flex: 0 0 auto;
+    width: 19%;
+  }
+  .nameOfUser {
+    flex: 0 0 auto;
+    width: 39.33%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .username-update .blank-space {
+    flex: 0 0 auto;
+    width: 23%;
+  }
+  .nameOfUser {
+    flex: 0 0 auto;
+    width: 35.33%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .username-update .blank-space {
+    flex: 0 0 auto;
+    width: 23%;
+  }
+  .nameOfUser {
+    flex: 0 0 auto;
+    width: 35.33%;
+  }
+}
+@media (min-width: 901px) and (max-width: 991px) {
+  .username-update .blank-space {
+    flex: 0 0 auto;
+    width: 30%;
+  }
+  .nameOfUser {
+    flex: 0 0 auto;
+    width: 28.33%;
+  }
+}
+/*done*/
