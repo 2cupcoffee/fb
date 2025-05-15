@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/54148970dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!--bootstrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!--bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <header id="facebook-header">
+      <div class="header-container container-fluid mx-1">
+        <div class="left-side d-flex gap-2 align-items-center">
+          <img src="images/favicon.png" height="40px" alt="Facebook Logo" />
+          <div class="search-container d-none d-md-block">
+            <form action="">
+              <i class="bi bi-search"></i>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search Facebook"
+              />
+            </form>
+          </div>
+          <button class="altSearch d-block d-md-none">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <div
+          class="middle d-flex justify-content-between align-items-center d-none d-lg-block flex-shrink-0"
+        >
+          <button>
+            <i class="bi bi-house-door"></i>
+          </button>
+          <button>
+            <i class="bi bi-person"></i>
+          </button>
+          <button>
+            <i class="bi bi-people"></i>
+          </button>
+        </div>
+        <div
+          class="right d-flex justify-content-center align-items-center gap-2"
+        >
+          <button class="d-flex flex-shrink-0">Find Friends</button>
+          <div
+            class="nav-buttons d-flex justify-content-center align-items-center gap-2"
+          >
+            <button class="d-none d-lg-block">
+              <i class="bi bi-grid-3x3-gap-fill"></i>
+            </button>
+            <button class="d-none d-lg-block">
+              <i class="bi bi-messenger"></i>
+            </button>
+            <button class="d-none d-md-block">
+              <i class="bi bi-bell-fill"></i>
+            </button>
+          </div>
+          <div class="d-flex userimage">
+            <img src="images/userimg.jpg" alt="Profile picture" />
+            <button
+              class="img-update d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main-page">
+      <section class="container-fluid">
+        <div class="banner container p-0">
+          <img
+            src="images/Banner.jpg"
+            alt="Banner"
+            height="100%"
+            width="100%"
+          />
+          <div class="add-banner-photo gap-2">
+            <i class="bi bi-camera-fill"></i>
+            <span class="d-none d-md-block">Add Cover Photo</span>
+          </div>
+          <div class="userimage-update">
+            <img src="images/userimg.jpg" alt="userimage" height="168" />
+            <button class="camera-button">
+              <i class="bi bi-camera-fill"></i>
+            </button>
+          </div>
+          <div class="username-update row mx-2">
+            <div class="col-3 blank-space"></div>
+            <div class="col-4 nameOfUser">
+              <h2 class="fw-bold">Coffee</h2>
+            </div>
+            <div
+              class="col-5 edit-buttons d-flex justify-content-end flex-shrink-0 align-items-center gap-2"
+            >
+              <button class="flex-shrink-0">
+                <i class="bi bi-plus"></i> Add to Story
+              </button>
+              <button class="flex-shrink-0">
+                <i class="bi bi-pencil-fill"></i> Edit Profile
+              </button>
+              <button><i class="fa-solid fa-angle-up"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div
+          class="container recommendation p-3 d-flex align-items-center flex-column"
+        >
+          <i class="bi bi-hand-thumbs-up-fill"></i>
+          <h4 class="fw-bold text-center">
+            Add more friends to get recommendations
+          </h4>
+          <p class="mb-0">
+            When you add some more friends, you'll see a list of people that you
+            may know here.
+          </p>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="container"></div>
+        <hr />
+      </section>
+      <section class="container p-0">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <nav class="nav">
+            <a class="nav-link active" aria-current="page" href="#">Posts</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link d-none d-sm-blocks" href="#">Friends</a>
+            <a class="nav-link d-none d-sm-block" href="#">Photos</a>
+            <a class="nav-link d-none d-md-block" href="#">Videos</a>
+            <a class="nav-link d-none d-md-block" href="#">Check-ins</a>
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Videos</a></li>
+                <li><a class="dropdown-item" href="#">Check-ins</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Sports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Music</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Films</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">TV programmes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Books</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Likes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Events</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Reviews Given</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Groups</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Manage Sections</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <button class="flex-shrink-0 mx-3 dot">
+            <i class="bi bi-three-dots"></i>
+          </button>
+        </div>
+      </section>
+      <section class="about-page container-fluid py-4">
+        <div class="about-page-content container bg-white rounded-4">
+          <div class="row pt-3">
+            <div class="col-12 col-md-4 px-2">
+              <h4 class="fw-bold fs-5 text-black mb-3 px-2">About</h4>
+              <ul class="aboutFirstRow list-unstyled d-flex flex-column gap-2">
+                <a
+                  href="#
+                "
+                  ><li>Overview</li></a
+                >
+                <a
+                  href="#
+                "
+                  ><li>Work and education</li></a
+                >
+                <a
+                  href="#
+                "
+                  ><li>Places lived</li></a
+                >
+
+                <a
+                  href="#
+                "
+                  ><li>Contact and basic info</li></a
+                >
+
+                <a
+                  href="#
+                "
+                  ><li>Family and relationships</li></a
+                >
+
+                <a
+                  href="#
+                "
+                  ><li>Details about you</li></a
+                >
+
+                <a
+                  href="#
+                "
+                  ><li>Life events</li></a
+                >
+              </ul>
+            </div>
+
+            <div
+              class="aboutSecondscol col-12 col-md-8 px-3 d-flex align-items-center"
+            >
+              <div class="ul d-flex flex-column gap-4 py-4">
+                <a href="#"><li>Add a workplace</li></a>
+                <a href="#"><li>Add secondary school</li></a>
+                <a href="#"><li>Add university</li></a>
+                <a href="#"><li>Add current city</li></a>
+                <a href="#"><li>Add home town</li></a>
+                <a href="#"><li>Add a relationship status</li></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="photos container rounded-3 bg-white p-3 my-4">
+          <div class="photos-header d-flex justify-content-between">
+            <h4 class="fw-bold fs-5 text-black mb-3 px-2">Photos</h4>
+            <div>
+              <button>Add to photos/video</button>
+              <button class="flex-shrink-0 mx-3 dot">
+                <i class="bi bi-three-dots"></i>
+              </button>
+            </div>
+          </div>
+          <div class="photos-body px-2">
+            <div><button class="photos-album py-3 px-3">Album</button></div>
+            <div class="photo-box mt-3">
+              <button><i class="bi bi-plus-lg"></i></button>
+            </div>
+            <!-- <div class="photo-grid"></div> -->
+            <div class="photo-footer">
+              <p class="mb-0 mt-2">Create Album</p>
+            </div>
+          </div>
+        </div>
+        <div class="sports container rounded-3 bg-white p-3 my-4">
+          <div class="sports-header d-flex justify-content-between">
+            <h4 class="fw-bold fs-5 text-black mb-3 px-2">Sports</h4>
+            <div>
+              <button class="flex-shrink-0 mx-3 dot">
+                <i class="bi bi-three-dots"></i>
+              </button>
+            </div>
+          </div>
+          <div class="sports-body px-2">
+            <div>
+              <button class="photos-album py-3 px-3">Sports Teams</button>
+              <button class="second-button py-3 px-3">Sports people</button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="music container rounded-3 bg-white p-3  my-4">
+          <div class="music-header d-flex justify-content-between">
+            <h4 class="fw-bold fs-5 text-black mb-3 px-2">Music</h4>
+            <div>
+              <button class="flex-shrink-0 mx-3 dot">
+                <i class="bi bi-three-dots"></i>
+              </button>
+            </div>
+          </div>
+          <div class="sports-body px-2">
+            <div>
+              <button class="photos-album py-3 px-3">Artists</button>
+            </div>
+            <div class="music-body py-4 text-center">
+              <h4 class="fw-bold">No Artists to show</h4>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="films container rounded-3 bg-white p-3 my-4">
+          <div class="films-header d-flex justify-content-between">
+            <h4 class="fw-bold fs-5 text-black mb-3 px-2">Films</h4>
+            <div>
+              <button class="flex-shrink-0 mx-3 dot">
+                <i class="bi bi-three-dots"></i>
+              </button>
+            </div>
+          </div>
+          <div class="sports-body px-2">
+            <div>
+              <button class="photos-album py-3 px-3">Watched</button>
+              <button class="second-button">Films</button>
+            </div>
+            <div class="music-body py-4 text-center">
+              <h4 class="fw-bold">No Watched to show</h4>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="tv container rounded-3 bg-white p-3 my-4">
+          <div class="tv-header d-flex justify-content-between">
+            <h4 class="fw-bold fs-5 text-black mb-3 px-2">TV programmes</h4>
+            <div>
+              <button class="flex-shrink-0 mx-3 dot">
+                <i class="bi bi-three-dots"></i>
+              </button>
+            </div>
+          </div>
+          <div class="sports-body px-2">
+            <div>
+              <button class="photos-album py-3 px-3">Watched</button>
+              <button class="second-button">TV programmes</button>
+            </div>
+            <div class="music-body py-4 text-center">
+              <h4 class="fw-bold">No Watched to show</h4>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="books container rounded-3 bg-white p-3 my-4">
+          <div class="books-header d-flex justify-content-between">
+            <h4 class="fw-bold fs-5 text-black mb-3 px-2">Books</h4>
+            <div>
+              <button class="flex-shrink-0 mx-3 dot">
+                <i class="bi bi-three-dots"></i>
+              </button>
+            </div>
+          </div>
+          <div class="sports-body px-2">
+            <div>
+              <button class="photos-album py-3 px-3">Read</button>
+              <button class="second-button">Books</button>
+            </div>
+            <div class="music-body py-4 text-center">
+              <h4 class="fw-bold">No Read to show</h4>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="books container rounded-3 bg-white p-3 my-4">
+          <div class="books-header d-flex justify-content-between">
+            <h4 class="fw-bold fs-5 text-black mb-3 px-2">Likes</h4>
+            <div>
+              <button class="flex-shrink-0 mx-3 dot">
+                <i class="bi bi-three-dots"></i>
+              </button>
+            </div>
+          </div>
+           <section class="container p-0">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <nav class="nav">
+            <a class="nav-link active" aria-current="page" href="#">All Likes</a>
+            <a class="nav-link" href="#">Films</a>
+            <a class="nav-link d-none d-sm-blocks" href="#">programmes</a>
+            <a class="nav-link d-none d-sm-block" href="#">Artists
+            </a>
+            <a class="nav-link d-none d-md-block" href="#">Books</a>
+            <a class="nav-link d-none d-md-block" href="#">Sports Teams</a>
+            <a class="nav-link d-none d-md-block" href="#">Sportspeople</a>
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Videos</a></li>
+                <li><a class="dropdown-item" href="#">Check-ins</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Sports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Music</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Films</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">TV programmes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Books</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Likes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Events</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Reviews Given</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Groups</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Manage Sections</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          
+        </div>
+      </section>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+  </body>
+</html>
